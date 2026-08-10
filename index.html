@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 3rd Set Blog — Division III Tennis Coverage</title>
+  <meta name="description" content="The 3rd Set Blog covers the stories, rivalries, rankings, and culture of NCAA Division III tennis. Built by former D3 players for the D3 community.">
+  <meta name="keywords" content="Division III tennis, D3 tennis, DIII tennis, college tennis, NCAA tennis, NESCAC tennis, ITA rankings, D3 tennis blog">
+  <link rel="canonical" href="https://the3rdsetblog.github.io/">
+
+  <!-- Social sharing cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The 3rd Set Blog — Division III Tennis Coverage">
+  <meta property="og:description" content="Stories, rivalries, rankings, and culture of Division III tennis. Built by former D3 players for the D3 community.">
+  <meta property="og:image" content="https://substackcdn.com/image/fetch/w_512,h_512,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc27a2398-14e9-4940-b4a4-ceeba5b9e368_1354x1354.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="https://substackcdn.com/image/fetch/w_64,h_64,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc27a2398-14e9-4940-b4a4-ceeba5b9e368_1354x1354.png">
+
+  <!-- Structured data so Google understands the site -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "The 3rd Set Blog",
+    "description": "Covering the stories, rivalries, rankings, and culture of NCAA Division III tennis.",
+    "url": "https://the3rdsetblog.substack.com",
+    "sameAs": ["https://www.instagram.com/the3rdsetblog", "https://the3rdsetblog.substack.com"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --court: #17402c;
+      --court-dark: #0e2b1d;
+      --cream: #f7f3ea;
+      --paper: #fffdf8;
+      --ink: #1c2420;
+      --ink-soft: #4c5a52;
+      --chalk: #e8e2d3;
+      --gold: #b98d1f;
+      --gold-soft: #f0e3bd;
+      --optic: #d9e021;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; }
+    a { color: inherit; }
+    .wrap { max-width: 1060px; margin: 0 auto; padding: 0 22px; }
+
+    /* ---------- Top bar ---------- */
+    .topbar {
+      background: var(--court-dark);
+      color: var(--cream);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 8px 14px;
+    }
+    .topbar a { color: var(--optic); font-weight: 700; text-decoration: none; }
+    .topbar a:hover { text-decoration: underline; }
+
+    /* ---------- Header ---------- */
+    header {
+      background: var(--court);
+      color: var(--cream);
+      border-bottom: 4px solid var(--gold);
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px 0;
+      flex-wrap: wrap;
+    }
+    .logo {
+      width: 64px; height: 64px;
+      border-radius: 12px;
+      border: 2px solid rgba(247,243,234,0.55);
+      object-fit: cover;
+      background: var(--court-dark);
+    }
+    .masthead .site-title {
+      font-size: 1.7rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      line-height: 1.15;
+    }
+    .masthead .site-tag {
+      font-size: 0.92rem;
+      color: #cfe0d3;
+      max-width: 46ch;
+    }
+    nav {
+      margin-left: auto;
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 9px 14px;
+      border-radius: 999px;
+      transition: background 0.15s ease;
+    }
+    nav a:hover { background: rgba(255,255,255,0.14); }
+    nav a.nav-cta {
+      background: var(--gold);
+      color: var(--court-dark);
+    }
+    nav a.nav-cta:hover { background: #d3a527; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      background:
+        linear-gradient(rgba(14,43,29,0.88), rgba(14,43,29,0.88)),
+        repeating-linear-gradient(90deg, var(--court) 0 120px, var(--court-dark) 120px 240px);
+      color: var(--cream);
+      text-align: center;
+      padding: 74px 22px 84px;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 50%; top: 0; bottom: 0;
+      width: 3px;
+      background: rgba(247,243,234,0.16); /* the center service line */
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero .kicker {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--optic);
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5.4vw, 3.4rem);
+      font-weight: 800;
+      max-width: 20ch;
+      margin: 0 auto 18px;
+      line-height: 1.15;
+    }
+    .hero p {
+      max-width: 58ch;
+      margin: 0 auto 30px;
+      font-size: 1.12rem;
+      color: #dcE8df;
+    }
+    .btn-row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.02rem;
+      padding: 14px 30px;
+      border-radius: 999px;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.25); }
+    .btn-gold { background: var(--gold); color: var(--court-dark); }
+    .btn-outline { border: 2px solid var(--cream); color: var(--cream); }
+    .btn-green { background: var(--court); color: var(--cream); }
+
+    /* ---------- Section scaffolding ---------- */
+    section { padding: 64px 0; }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 30px;
+      border-bottom: 3px solid var(--court);
+      padding-bottom: 12px;
+    }
+    .section-head h2 { font-size: 1.9rem; color: var(--court-dark); }
+    .section-head .rule-note {
+      font-size: 0.85rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ---------- Article cards ---------- */
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 22px; }
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--chalk);
+      border-top: 5px solid var(--court);
+      border-radius: 12px;
+      padding: 26px 24px 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      position: relative;
+    }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 12px 26px rgba(23,64,44,0.14); }
+    .card.featured { border-top-color: var(--gold); background: linear-gradient(180deg, #fffcf1, var(--paper)); }
+    .badge {
+      position: absolute;
+      top: -13px; right: 16px;
+      background: var(--gold);
+      color: var(--court-dark);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+    .card .date {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .card h3 { font-size: 1.28rem; line-height: 1.3; color: var(--court-dark); }
+    .card p { color: var(--ink-soft); font-size: 0.98rem; flex-grow: 1; }
+    .card .btn { align-self: flex-start; padding: 10px 22px; font-size: 0.95rem; }
+
+    /* ---------- About ---------- */
+    .about { background: var(--court); color: var(--cream); }
+    .about .section-head { border-bottom-color: var(--gold); }
+    .about .section-head h2 { color: var(--cream); }
+    .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
+    .about p { margin-bottom: 14px; color: #e2ece4; font-size: 1.05rem; }
+    .about-panel {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(247,243,234,0.25);
+      border-radius: 12px;
+      padding: 26px;
+    }
+    .about-panel h3 { color: var(--optic); font-size: 1.15rem; margin-bottom: 12px; }
+    .about-panel ul { list-style: none; }
+    .about-panel li { padding: 8px 0; border-bottom: 1px solid rgba(247,243,234,0.15); font-size: 0.98rem; }
+    .about-panel li:last-child { border-bottom: none; }
+    .about-panel li::before { content: "🎾 "; }
+
+    /* ---------- Follow ---------- */
+    .follow { text-align: center; }
+    .follow h2 { font-size: 1.9rem; color: var(--court-dark); margin-bottom: 10px; }
+    .follow > .wrap > p { max-width: 56ch; margin: 0 auto 30px; color: var(--ink-soft); }
+    .follow-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; max-width: 900px; margin: 0 auto; }
+    .follow-card {
+      background: var(--paper);
+      border: 1px solid var(--chalk);
+      border-radius: 12px;
+      padding: 30px 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .follow-card .icon { font-size: 2rem; }
+    .follow-card h3 { color: var(--court-dark); font-size: 1.2rem; }
+    .follow-card p { color: var(--ink-soft); font-size: 0.95rem; }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: var(--court-dark);
+      color: #bfd2c4;
+      padding: 34px 0;
+      font-size: 0.9rem;
+    }
+    .footer-inner { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; align-items: center; }
+    footer a { color: var(--optic); text-decoration: none; font-weight: 600; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 720px) {
+      .about-grid { grid-template-columns: 1fr; }
+      nav { margin-left: 0; }
+      .header-inner { justify-content: center; text-align: center; }
+      .masthead { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    New here? Start with <a href="https://the3rdsetblog.substack.com/p/what-its-actually-like-to-play-diii">What It’s Actually Like to Play DIII Tennis</a>
+  </div>
+
+  <header>
+    <div class="wrap header-inner">
+      <img class="logo" src="https://substackcdn.com/image/fetch/w_128,h_128,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc27a2398-14e9-4940-b4a4-ceeba5b9e368_1354x1354.png" alt="The 3rd Set Blog logo" onerror="this.style.display='none'">
+      <div class="masthead">
+        <div class="site-title">The 3rd Set Blog</div>
+        <div class="site-tag">Covering the stories, rivalries, rankings, and culture of Division III tennis.</div>
+      </div>
+      <nav>
+        <a href="#articles">Articles</a>
+        <a href="#about">About</a>
+        <a href="#follow">Follow</a>
+        <a class="nav-cta" href="https://the3rdsetblog.substack.com/subscribe">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <span class="kicker">By former D3 players, for the D3 community</span>
+    <h1>The home of Division III tennis coverage</h1>
+    <p>Recaps, rankings, awards debates, and the culture of D3 tennis — the conversation that didn’t exist until now. Every article free, straight to your inbox.</p>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="https://the3rdsetblog.substack.com/subscribe">Subscribe — it’s free</a>
+      <a class="btn btn-outline" href="#articles">Read the articles</a>
+    </div>
+  </div>
+
+  <section id="articles">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>All Articles</h2>
+        <span class="rule-note">Newest first</span>
+      </div>
+      <div class="cards">
+
+        <div class="card featured">
+          <span class="badge">Start here</span>
+          <span class="date">July 22, 2026</span>
+          <h3>What It’s Actually Like to Play DIII Tennis</h3>
+          <p>People assume DIII is low-level competition because it doesn’t carry the visibility or aura of D1 programs. Here’s the reality from inside the locker room.</p>
+          <a class="btn btn-green" href="https://the3rdsetblog.substack.com/p/what-its-actually-like-to-play-diii">Read article →</a>
+        </div>
+
+        <div class="card">
+          <span class="date">July 8, 2026</span>
+          <h3>The ITA Got It Wrong: Our 2026 DIII Men’s Tennis Awards</h3>
+          <p>Every year the ITA hands out national awards. This year, we think they missed. Our picks for who actually deserved the hardware.</p>
+          <a class="btn btn-green" href="https://the3rdsetblog.substack.com/p/the-ita-got-it-wrong-our-2026-diii">Read article →</a>
+        </div>
+
+        <div class="card">
+          <span class="date">June 24, 2026</span>
+          <h3>The State of DIII Men’s Tennis: Conferences, Coaches, and a Changing Landscape</h3>
+          <p>The decline of the NESCAC, coaching moves, and the shifting balance of power across the country.</p>
+          <a class="btn btn-green" href="https://the3rdsetblog.substack.com/p/the-state-of-diii-mens-tennis-conferences">Read article →</a>
+        </div>
+
+        <div class="card">
+          <span class="date">June 10, 2026</span>
+          <h3>2025–2026 NCAA Division III Tennis Season Recap</h3>
+          <p>University of Chicago wins it all. UChicago’s championship run, Advik Mareedu’s legacy, and everything that defined the season.</p>
+          <a class="btn btn-green" href="https://the3rdsetblog.substack.com/p/2025-2026-ncaa-division-iii-tennis">Read article →</a>
+        </div>
+
+        <div class="card">
+          <span class="date">June 9, 2026</span>
+          <h3>Welcome to The 3rd Set Blog!</h3>
+          <p>Who we are, why we started this, and what we’re building: a real home for the D3 tennis conversation.</p>
+          <a class="btn btn-green" href="https://the3rdsetblog.substack.com/p/welcome-to-the-third-set-blog">Read article →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About The 3rd Set</h2>
+        <span class="rule-note">Our story</span>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>If you’ve ever tried finding good writing or coverage about D3 tennis, it’s pretty much non-existent. There’s no real conversation. No one breaks down what truly happens or why it matters.</p>
+          <p>That’s why we started this.</p>
+          <p>We’re two people who love D3 tennis — we played it, watched it, and argued with each other way too late at night about it. We got tired of there not being a community to talk about it seriously. Not ESPN-level seriousness: just two friends who care about the sport we play and want to build an open community around it.</p>
+          <p>Over time, we want to attract a community that’s as fascinated by this sport as we are. If that sounds like your kind of thing, stick around.</p>
+        </div>
+        <div class="about-panel">
+          <h3>What we cover</h3>
+          <ul>
+            <li>Recaps &amp; analysis of the big matches</li>
+            <li>Rankings and awards — including where the ITA gets it wrong</li>
+            <li>Conference shake-ups and coaching moves</li>
+            <li>The culture and stories of D3 tennis</li>
+            <li>Predictions, debates, and whatever feels right</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="follow" id="follow">
+    <div class="wrap">
+      <h2>Join the community</h2>
+      <p>The 3rd Set grows when players, coaches, parents, and fans pass it along. Here’s how to stay in the loop and help the sport get the coverage it deserves.</p>
+      <div class="follow-cards">
+        <div class="follow-card">
+          <span class="icon">📬</span>
+          <h3>Subscribe on Substack</h3>
+          <p>Every article free, delivered straight to your inbox the moment it drops.</p>
+          <a class="btn btn-gold" href="https://the3rdsetblog.substack.com/subscribe">Subscribe free</a>
+        </div>
+        <div class="follow-card">
+          <span class="icon">📸</span>
+          <h3>Follow on Instagram</h3>
+          <p>Follow @the3rdsetblog for updates, takes, and new-post alerts.</p>
+          <a class="btn btn-green" href="https://www.instagram.com/the3rdsetblog">@the3rdsetblog</a>
+        </div>
+        <div class="follow-card">
+          <span class="icon">🎾</span>
+          <h3>Share with a teammate</h3>
+          <p>Know a teammate, coach, alum, or D3 tennis fan? Send this their way.</p>
+          <a class="btn btn-green" href="mailto:?subject=Check%20out%20The%203rd%20Set%20Blog&body=Thought%20you%27d%20like%20this%20%E2%80%94%20a%20blog%20covering%20Division%20III%20tennis%3A%20https%3A%2F%2Fthe3rdsetblog.substack.com">Share by email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>© 2026 The 3rd Set Blog · Covering Division III tennis</div>
+      <div>
+        <a href="https://the3rdsetblog.substack.com">Substack</a> ·
+        <a href="https://www.instagram.com/the3rdsetblog">Instagram</a> ·
+        <a href="https://the3rdsetblog.substack.com/subscribe">Subscribe</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
