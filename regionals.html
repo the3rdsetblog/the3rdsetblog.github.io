@@ -169,7 +169,7 @@
     <div class="wrap">
       <span class="kicker">Fall 2026 · ITA Division III Men</span>
       <h1>Nine Regionals, One Map</h1>
-      <p>From Walla Walla to Middlebury, here’s every host site for the 2026 ITA Division III Men’s Regional Championships. Click a tennis ball to jump to that regional.</p>
+      <p>From Walla Walla to Middlebury, here’s every host site for the 2026 ITA Division III Men’s Regional Championships. Click a tennis ball to open that regional’s draw.</p>
     </div>
   </section>
 
@@ -240,7 +240,7 @@
     <div class="wrap">
       <h2>The host sites</h2>
       <ul class="host-grid" id="host-list"></ul>
-      <p class="source">Host sites and dates via the <a href="https://wearecollegetennis.com/championships/ita-small-college-regionals/">ITA Regional Small College Championships</a> page.</p>
+      <p class="source">Draws via each host and the ITA. Host sites and dates via the <a href="https://wearecollegetennis.com/championships/ita-small-college-regionals/">ITA Regional Small College Championships</a> page.</p>
     </div>
   </section>
 
@@ -254,15 +254,15 @@
     // lx/ly nudge the label relative to the pin; anchor "end" puts the label on the left.
     var ITA = "https://wearecollegetennis.com/championships/ita-small-college-regionals/";
     var HOSTS = [
-      { region: "Northwest",   school: "Whitman College",             city: "Walla Walla, WA",      dates: "Sept. 25–28", url: ITA, x: 148.9, y: 95.8,  lx: 16,  ly: 5 },
-      { region: "West",        school: "Claremont-Mudd-Scripps",      city: "Claremont, CA",        dates: "Oct. 2–4",    url: ITA, x: 96.6,  y: 364.3, lx: 16,  ly: 5 },
-      { region: "Southwest",   school: "Hardin-Simmons University",   city: "Abilene, TX",          dates: "Oct. 1–4",    url: ITA, x: 427.0, y: 446.2, lx: 16,  ly: 5 },
-      { region: "Midwest",     school: "Gustavus Adolphus College",   city: "St. Peter, MN",        dates: "Oct. 2–4",    url: ITA, x: 530.9, y: 176.2, lx: -16, ly: 5, anchor: "end" },
-      { region: "Central",     school: "Wabash College",              city: "Crawfordsville, IN",   dates: "Oct. 2–4",    url: ITA, x: 654.9, y: 266.8, lx: -16, ly: 5, anchor: "end" },
-      { region: "South",       school: "Rhodes College",              city: "Memphis, TN",          dates: "Oct. 2–4",    url: ITA, x: 608.5, y: 382.7, lx: 16,  ly: 5 },
-      { region: "Southeast",   school: "Mary Washington",             city: "Fredericksburg, VA",   dates: "Oct. 1–4",    url: ITA, x: 822.6, y: 282.4, lx: -16, ly: 18, anchor: "end" },
-      { region: "Northeast",   school: "Skidmore College",            city: "Saratoga Springs, NY", dates: "Sept. 25–28", url: ITA, x: 860.8, y: 161.9, lx: -16, ly: 14, anchor: "end" },
-      { region: "New England", school: "Middlebury College",          city: "Middlebury, VT",       dates: "Sept. 25–27", url: ITA, x: 865.6, y: 139.3, lx: -14, ly: -10, anchor: "end" }
+      { region: "Northwest",   school: "Whitman College",             city: "Walla Walla, WA",      dates: "Sept. 25–28", url: "https://colleges.wearecollegetennis.com/competitions/WhitmanCollegeM/Tournaments/draws/9E33326B-6854-426C-9F54-4C43EAB341EE", x: 148.9, y: 95.8,  lx: 16,  ly: 5 },
+      { region: "West",        school: "Claremont-Mudd-Scripps",      city: "Claremont, CA",        dates: "Oct. 2–4",    url: "https://colleges.wearecollegetennis.com/competitions/ClaremontMuddScrippsCollM/Tournaments/draws/16A4B4AA-FA0A-4205-B24D-FEB369DDD5AC", x: 96.6,  y: 364.3, lx: 16,  ly: 5 },
+      { region: "Southwest",   school: "Trinity University",          city: "San Antonio, TX",      dates: "Oct. 2–5",    url: "https://colleges.wearecollegetennis.com/competitions/TrinityUniversityW/Tournaments/overview/C8C7EE37-79DC-4BC9-A575-1BB5B806F22D", x: 449.0, y: 515.4, lx: 16,  ly: 5 },
+      { region: "Midwest",     school: "Gustavus Adolphus College",   city: "St. Peter, MN",        dates: "Oct. 2–4",    url: "https://gogusties.com/sports/2026/9/30/2026-ita-diii-mens-midwest-regional-championships.aspx", x: 530.9, y: 176.2, lx: -16, ly: 5, anchor: "end" },
+      { region: "Central",     school: "Wabash College",              city: "Crawfordsville, IN",   dates: "Oct. 2–4",    url: "https://colleges.wearecollegetennis.com/Competitions/ITA/Tournaments/overview/3A9D58E8-F6D1-4E21-9366-6E123C0AE8F1", x: 654.9, y: 266.8, lx: -16, ly: 5, anchor: "end" },
+      { region: "South",       school: "Rhodes College",              city: "Memphis, TN",          dates: "Oct. 2–4",    url: "https://colleges.wearecollegetennis.com/Competitions/ITA/Tournaments/Overview/3B838857-271D-4D3F-B40C-E6BA53178696", x: 608.5, y: 382.7, lx: 16,  ly: 5 },
+      { region: "Southeast",   school: "Mary Washington",             city: "Fredericksburg, VA",   dates: "Oct. 1–4",    url: "https://colleges.wearecollegetennis.com/Competitions/ITA/Tournaments/Overview/5ac1098e-bef9-40fa-901b-f09f99009f44", x: 822.6, y: 282.4, lx: -16, ly: 18, anchor: "end" },
+      { region: "Northeast",   school: "Skidmore College",            city: "Saratoga Springs, NY", dates: "Sept. 25–28", url: "https://colleges.wearecollegetennis.com/competitions/SkidmoreCollegeM/Tournaments/overview/E1CEC6BE-80BC-4578-983F-CDF750F3D0E9", x: 860.8, y: 161.9, lx: -16, ly: 14, anchor: "end" },
+      { region: "New England", school: "Middlebury College",          city: "Middlebury, VT",       dates: "Sept. 25–27", url: "https://colleges.wearecollegetennis.com/Competitions/ITA/Tournaments/overview/4AC97C7D-B7AF-4752-ADD3-9606F92017A5", x: 865.6, y: 139.3, lx: -14, ly: -10, anchor: "end" }
     ];
 
     var NS = "http://www.w3.org/2000/svg";
@@ -308,7 +308,7 @@
           '<span class="region">' + h.region + ' Regional</span>' +
           '<span class="school">' + h.school + '</span>' +
           '<span class="meta">' + h.city + ' · ' + h.dates + '</span>' +
-          '<span class="go">View regional →</span>' +
+          '<span class="go">View the draw →</span>' +
         '</a>';
       list.appendChild(li);
 
