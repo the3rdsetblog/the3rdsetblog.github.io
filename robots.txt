@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://the3rdsetblog.github.io/sitemap.xml
