@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The ITA Cup Draw — The 3rd Set Blog</title>
+  <meta name="description" content="The full 2026 ITA Cup Division III men's singles draw, every match from the Round of 16 to the final, with scores.">
+  <link rel="canonical" href="https://the3rdsetblog.github.io/ita-cup-draw.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="The ITA Cup Draw: 2026 DIII Men’s Singles">
+  <meta property="og:description" content="Every match, every score, from the Round of 16 to Alex Feies lifting the trophy.">
+  <meta property="og:image" content="https://substackcdn.com/image/fetch/w_512,h_512,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc27a2398-14e9-4940-b4a4-ceeba5b9e368_1354x1354.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="https://substackcdn.com/image/fetch/w_64,h_64,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc27a2398-14e9-4940-b4a4-ceeba5b9e368_1354x1354.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --court: #17402c;
+      --court-dark: #0e2b1d;
+      --sage-card: #234a35;
+      --sage-line: #3c6a50;
+      --sage-text: #b9d0c0;
+      --cream: #f7f3ea;
+      --ink: #1c2420;
+      --ink-soft: #4c5a52;
+      --gold: #b98d1f;
+      --optic: #d9e021;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Source Sans 3", "Segoe UI", Arial, sans-serif; background: var(--cream); color: var(--ink); line-height: 1.5; }
+    h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+
+    header { background: var(--court); color: var(--cream); border-bottom: 4px solid var(--gold); }
+    .header-inner { display: flex; align-items: center; gap: 14px; padding: 16px 0; flex-wrap: wrap; }
+    .logo { width: 48px; height: 48px; border-radius: 10px; border: 2px solid rgba(247,243,234,0.55); object-fit: cover; }
+    .site-title { font-family: "Playfair Display", Georgia, serif; font-size: 1.35rem; font-weight: 800; color: var(--cream); text-decoration: none; }
+    nav { margin-left: auto; display: flex; gap: 4px; flex-wrap: wrap; }
+    nav a { color: var(--cream); text-decoration: none; font-weight: 600; padding: 8px 14px; border-radius: 999px; }
+    nav a:hover { background: rgba(255,255,255,0.14); }
+    nav a.current { background: rgba(217,224,33,0.18); color: var(--optic); }
+
+    .intro { padding: 44px 0 26px; text-align: center; }
+    .kicker { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); }
+    .intro h1 { font-size: clamp(2rem, 5vw, 3rem); color: var(--court-dark); line-height: 1.15; margin: 8px auto 12px; }
+    .intro p { max-width: 60ch; margin: 0 auto; color: var(--ink-soft); font-size: 1.05rem; }
+
+    /* ---------- Bracket ---------- */
+    .board { background: var(--court-dark); color: var(--cream); border-radius: 16px; box-shadow: 0 14px 34px rgba(14,43,29,0.25); padding: 26px; margin-bottom: 24px; }
+    .board-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; border-bottom: 2px solid var(--sage-line); padding-bottom: 14px; margin-bottom: 18px; }
+    .board-head .title { font-family: "Anton", Impact, sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); text-transform: uppercase; letter-spacing: 0.02em; }
+    .board-head .sub { color: var(--optic); font-weight: 700; letter-spacing: 0.14em; font-size: 0.85rem; text-transform: uppercase; }
+    .scroll-hint { display: none; color: var(--sage-text); font-size: 0.85rem; margin-bottom: 10px; }
+
+    .bracket-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .bracket { min-width: 1120px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) 210px; column-gap: 28px; }
+    .round-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.18em; color: var(--sage-text); text-transform: uppercase; padding-bottom: 12px; }
+    .col { display: flex; flex-direction: column; justify-content: space-around; gap: 10px; min-height: 900px; }
+
+    .m { background: var(--sage-card); border: 1px solid var(--sage-line); border-radius: 10px; padding: 10px 14px; }
+    .p { display: grid; grid-template-columns: 22px 1fr; align-items: baseline; }
+    .p + .p { margin-top: 4px; }
+    .seed { font-size: 0.8rem; font-weight: 700; color: var(--optic); }
+    .nm { font-size: 1rem; color: #a9c2b0; }
+    .sc { font-size: 0.78rem; color: #a9c2b0; display: block; }
+    .w .nm { color: var(--cream); font-weight: 700; }
+    .score { border-top: 1px solid var(--sage-line); margin-top: 8px; padding-top: 6px; font-weight: 700; color: var(--optic); letter-spacing: 0.04em; word-spacing: 0.35em; font-size: 0.95rem; }
+
+    .champ { align-self: center; border: 2px solid var(--optic); border-radius: 14px; padding: 22px 18px; }
+    .champ .lbl { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.18em; color: var(--optic); margin: 8px 0 4px; }
+    .champ .nm { font-family: "Anton", Impact, sans-serif; font-size: 2.6rem; line-height: 0.95; text-transform: uppercase; color: var(--cream); font-weight: 400; }
+    .champ .sc { font-size: 0.95rem; margin-top: 8px; color: #dbe7de; }
+
+    .source { font-size: 0.9rem; color: var(--ink-soft); text-align: center; margin: 0 auto 60px; max-width: 70ch; }
+    .source a { color: var(--court); font-weight: 600; }
+
+    @media (max-width: 1160px) { .scroll-hint { display: block; } }
+
+    footer { background: var(--court-dark); color: #bfd2c4; padding: 28px 0; font-size: 0.9rem; text-align: center; }
+    footer a { color: var(--optic); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap header-inner">
+      <img class="logo" src="https://substackcdn.com/image/fetch/w_128,h_128,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc27a2398-14e9-4940-b4a4-ceeba5b9e368_1354x1354.png" alt="The 3rd Set Blog logo" onerror="this.style.display='none'">
+      <a class="site-title" href="./">The 3rd Set Blog</a>
+      <nav>
+        <a href="./#articles">Articles</a>
+        <a href="trophy-case.html">Trophy Case</a>
+        <a class="current" href="ita-cup-draw.html" aria-current="page">ITA Cup Draw</a>
+        <a href="regionals.html">Regionals Map</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro">
+    <div class="wrap">
+      <span class="kicker">2026 · Rome, Georgia · Oct 15–18</span>
+      <h1>The ITA Cup Draw</h1>
+      <p>The full Division III men’s singles bracket from the 2026 ITA Cup: sixteen regional qualifiers, fifteen matches, one champion.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="board">
+      <div class="board-head">
+        <div class="title">DIII Men’s Singles</div>
+        <div class="sub">Main draw · Winners in bold</div>
+      </div>
+      <p class="scroll-hint">Swipe sideways to see the whole bracket →</p>
+
+      <div class="bracket-scroll">
+        <div class="bracket" aria-label="2026 ITA Cup Division III men's singles draw">
+          <div class="round-label">Round of 16</div>
+          <div class="round-label">Quarterfinals</div>
+          <div class="round-label">Semifinals</div>
+          <div class="round-label">Final</div>
+          <div class="round-label">Champion</div>
+
+          <!-- Round of 16 -->
+          <div class="col">
+            <div class="m"><div class="p w"><span class="seed">1</span><span class="nm">Drew Goldman<span class="sc">Pomona-Pitzer</span></span></div><div class="p"><span class="seed"></span><span class="nm">Dominik Knutson<span class="sc">Gustavus Adolphus</span></span></div><div class="score">6-2 6-1</div></div>
+            <div class="m"><div class="p w"><span class="seed"></span><span class="nm">Sibi Raja<span class="sc">Claremont-Mudd-Scripps</span></span></div><div class="p"><span class="seed"></span><span class="nm">Yuval Goodman<span class="sc">Skidmore</span></span></div><div class="score">1-6 6-2 6-3</div></div>
+            <div class="m"><div class="p w"><span class="seed">3</span><span class="nm">Alex Feies<span class="sc">Carnegie Mellon</span></span></div><div class="p"><span class="seed"></span><span class="nm">Noah Lewis<span class="sc">Middlebury</span></span></div><div class="score">6-1 6-4</div></div>
+            <div class="m"><div class="p w"><span class="seed"></span><span class="nm">Theo Billson<span class="sc">UW-Whitewater</span></span></div><div class="p"><span class="seed"></span><span class="nm">Mitchell Deames<span class="sc">Emory</span></span></div><div class="score">7-5 6-0</div></div>
+            <div class="m"><div class="p w"><span class="seed"></span><span class="nm">Aidan Borosko<span class="sc">Denison</span></span></div><div class="p"><span class="seed"></span><span class="nm">Niklas Nordahl Jensen<span class="sc">Whitman</span></span></div><div class="score">7-5 6-3</div></div>
+            <div class="m"><div class="p w"><span class="seed">4</span><span class="nm">Garv Bahl<span class="sc">Tufts</span></span></div><div class="p"><span class="seed"></span><span class="nm">Jared Perry<span class="sc">Trinity (TX)</span></span></div><div class="score">6-4 7-6(8)</div></div>
+            <div class="m"><div class="p w"><span class="seed"></span><span class="nm">Ajay Kartik<span class="sc">Emory</span></span></div><div class="p"><span class="seed"></span><span class="nm">Rowan Matorin<span class="sc">Case Western Reserve</span></span></div><div class="score">6-4 0-6 6-4</div></div>
+            <div class="m"><div class="p w"><span class="seed">2</span><span class="nm">Adamantios Stavrakas<span class="sc">Johns Hopkins</span></span></div><div class="p"><span class="seed"></span><span class="nm">Mustafa Ege Topbas<span class="sc">Skidmore</span></span></div><div class="score">6-2 6-0</div></div>
+          </div>
+
+          <!-- Quarterfinals -->
+          <div class="col">
+            <div class="m"><div class="p w"><span class="seed">1</span><span class="nm">Drew Goldman<span class="sc">Pomona-Pitzer</span></span></div><div class="p"><span class="seed"></span><span class="nm">Sibi Raja<span class="sc">Claremont-Mudd-Scripps</span></span></div><div class="score">6-3 6-4</div></div>
+            <div class="m"><div class="p w"><span class="seed">3</span><span class="nm">Alex Feies<span class="sc">Carnegie Mellon</span></span></div><div class="p"><span class="seed"></span><span class="nm">Theo Billson<span class="sc">UW-Whitewater</span></span></div><div class="score">6-3 2-6 6-2</div></div>
+            <div class="m"><div class="p w"><span class="seed">4</span><span class="nm">Garv Bahl<span class="sc">Tufts</span></span></div><div class="p"><span class="seed"></span><span class="nm">Aidan Borosko<span class="sc">Denison</span></span></div><div class="score">7-5 7-6(4)</div></div>
+            <div class="m"><div class="p w"><span class="seed"></span><span class="nm">Ajay Kartik<span class="sc">Emory</span></span></div><div class="p"><span class="seed">2</span><span class="nm">Adamantios Stavrakas<span class="sc">Johns Hopkins</span></span></div><div class="score">7-6(5) 7-6(4)</div></div>
+          </div>
+
+          <!-- Semifinals -->
+          <div class="col">
+            <div class="m"><div class="p w"><span class="seed">3</span><span class="nm">Alex Feies<span class="sc">Carnegie Mellon</span></span></div><div class="p"><span class="seed">1</span><span class="nm">Drew Goldman<span class="sc">Pomona-Pitzer</span></span></div><div class="score">6-4 5-7 6-1</div></div>
+            <div class="m"><div class="p w"><span class="seed">4</span><span class="nm">Garv Bahl<span class="sc">Tufts</span></span></div><div class="p"><span class="seed"></span><span class="nm">Ajay Kartik<span class="sc">Emory</span></span></div><div class="score">3-6 6-4 6-1</div></div>
+          </div>
+
+          <!-- Final -->
+          <div class="col">
+            <div class="m"><div class="p w"><span class="seed">3</span><span class="nm">Alex Feies<span class="sc">Carnegie Mellon</span></span></div><div class="p"><span class="seed">4</span><span class="nm">Garv Bahl<span class="sc">Tufts</span></span></div><div class="score">6-3 6-3</div></div>
+          </div>
+
+          <!-- Champion -->
+          <div class="col">
+            <a class="champ" href="trophy-case.html" style="text-decoration: none; color: inherit;">
+              <svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#d9e021" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+              <div class="lbl">CHAMPION</div>
+              <div class="nm">Alex<br>Feies</div>
+              <div class="sc">Carnegie Mellon · (3)</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="source">Draw and scores via the <a href="https://colleges.wearecollegetennis.com/Competitions/ITA/Tournaments/draws/88FD775C-67C9-474F-B148-1AF829E0C996">ITA Cup draw</a>, with semifinal and final results from <a href="https://athletics.cmu.edu/sports/mten/2026-27/releases/20261018i5unwz">Carnegie Mellon</a> and <a href="https://gotuftsjumbos.com/news/2026/10/17/mens-tennis-bahl-rallies-to-advance-to-ita-cup-title-match-thanks-to-three-set-win-saturday.aspx">Tufts</a> Athletics.</p>
+  </div>
+
+  <footer>
+    <div class="wrap">© 2026 The 3rd Set Blog · <a href="./">Home</a> · <a href="https://the3rdsetblog.substack.com/subscribe">Subscribe</a></div>
+  </footer>
+
+  <script data-goatcounter="https://the3rdsetblog.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
